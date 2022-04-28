@@ -7,7 +7,13 @@ steps:
   - type: Command
     name: "Check packages"
     command: |
+      echo "Maven Version: "
       mvn -v
+      echo "Node NPM version: "
       node -v
-      ojet -v
+      echo "Installing Ojet"
+      sudo npm install -g @oracle/ojet-cli
+      echo "Ojet version"
+      ojet --version
+
 
