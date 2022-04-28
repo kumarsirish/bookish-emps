@@ -5,6 +5,9 @@ shell: bash
 
 steps:
   - type: Command
-    name: "Install Maven"
+    name: "Check packages"
     command: |
-      mvn clean install
+      mvn -v
+      node -v
+      ojet -v
+
