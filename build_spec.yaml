@@ -12,7 +12,8 @@ steps:
       echo "Node NPM version: "
       node -v
       echo "Installing Ojet"
-      sudo npm install -g @oracle/ojet-cli
+      uname -a
+      npm install -g @oracle/ojet-cli
       echo "Ojet version"
       ojet --version
 
